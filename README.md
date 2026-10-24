@@ -22,8 +22,11 @@ Auf Desktop steht die Navigation neben dem Vereinsnamen. Unter 76rem ersetzt
 ein natives HTML-Menü die Navigationszeile, bevor sie mit dem Namen kollidiert.
 Die Karte aus `src/assets/desktop_nav.png` bildet darunter einen seitenbreiten
 Hero mit der Willkommensüberschrift. Seine Höhe richtet sich nach dem Viewport
-(Desktop 75svh, mobil 65svh, jeweils mit Mindest- und Maximalhöhe). Das Bild wird
-als WebP ausgegeben und proportional auf den Hero zugeschnitten. Ein dunkler
+(Desktop 75svh, mobil 65svh, jeweils mit Mindest- und Maximalhöhe). Das PNG wird
+in seiner Originalauflösung (1672 × 941 Pixel) ohne zusätzliche verlustbehaftete
+Kompression oder verkleinerte Varianten ausgegeben und proportional auf den Hero
+zugeschnitten. Für schärfere Darstellung auf großen bzw. hochauflösenden
+Bildschirmen ist ein höher aufgelöstes Original nötig. Ein dunkler
 Verlauf hält den darüberliegenden Text lesbar. Lorem Ipsum folgt unter dem Hero.
 
 `dist/`, `.astro/` und `node_modules/` sind generierte, nicht versionierte Ordner.
