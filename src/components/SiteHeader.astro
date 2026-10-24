@@ -1,11 +1,16 @@
 ---
+import { Image } from 'astro:assets';
+import coatOfArms from '../assets/coatOfArms.png';
 import DesktopNav from './DesktopNav.astro';
 import MobileNav from './MobileNav.astro';
 ---
 <header class="site-header">
   <div class="header-bar">
     <div class="header-inner">
-      <div class="brand">Weltenwanderer Moosburg</div>
+      <div class="brand">
+        <Image class="brand-crest" src={coatOfArms} alt="" widths={[64, 128, 192]} sizes="(max-width: 640px) 44px, 64px" format="webp" quality={95} loading="eager" />
+        <span>Weltenwanderer<br />Moosburg e.V.</span>
+      </div>
       <DesktopNav />
       <MobileNav />
     </div>
