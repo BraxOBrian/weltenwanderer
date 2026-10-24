@@ -1,0 +1,11 @@
+---
+import map from '../assets/desktop_nav.png';
+---
+<section class="map-hero" aria-labelledby="hero-title">
+  <!-- Originalauflösung erhalten: Kleine Bildvarianten würden beim Hero-Zuschnitt vergrößert. -->
+  <img src={map.src} width={map.width} height={map.height} alt="" loading="eager" fetchpriority="high" decoding="async" />
+  <div class="hero-copy">
+    <p class="eyebrow">Startseite</p>
+    <h1 id="hero-title">Willkommen bei den Weltenwanderern</h1>
+  </div>
+</section>
