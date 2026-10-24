@@ -20,12 +20,13 @@ Dieses Repository enthält die Webseite des Pen-&-Paper-Vereins **Weltenwanderer
 1. **Desktop:** Im oberen Bereich **jeder Seite** befindet sich dieselbe illustrierte Stadtkarte als Hauptnavigation. Sie ist **nicht bildschirmfüllend** und verdrängt den Seiteninhalt nicht.
 2. **Navigationseinträge sind dauerhaft sichtbar.** Ihre Bezeichnungen dürfen **nicht erst bei Hover** erscheinen. Hover/Focus darf lediglich das aktive Ziel zusätzlich hervorheben.
 3. **Mobile Geräte:** Hier wird die Kartennavigation durch eine **konventionelle, gut bedienbare Navigation** ersetzt (z. B. Kopfzeile mit ausklappbarem Menü). Nicht versuchen, eine verkleinerte Gesamtkarte als primäre mobile Navigation zu erzwingen.
-4. **Unterseiten:** Karte oben, darunter der normale Seiteninhalt. Aktuelle Seite soll in der Navigation erkennbar sein.
-5. **Technologie:** Statische Webseite, bevorzugt **Astro** mit HTML/CSS und **minimalem JavaScript**, nur wo funktional nötig. **Kein Vue 3, React oder anderes clientseitiges UI-Framework** ohne neue ausdrückliche Entscheidung.
-6. **Designfarben:** Gedämpftes **Rot, Gold und Braun**, ergänzt durch Pergamenttöne. Atmosphäre: historisch, fantasievoll, hochwertig – aber lesbar, zurückhaltend und nicht überladen.
-7. **Kartenstil:** Handgezeichnete, historische Vogelperspektive auf Moosburg mit dichten Häuserzeilen, der markanten Kirche und warmen Pergamentfarben. **Keine modernen Bahnhofs-/Gleisanlagen**, kein Kompass und keine Straßennamen auf der finalen Karte. Wo möglich, an der tatsächlichen Altstadtstruktur orientieren.
-8. **Dekoration reduzieren:** Keine überladenen Wappen, Wimpel, Bücherstapel oder sonstige Deko im Inhaltsbereich. **Efeu kann sparsam im Karten-/Navigationsbereich vorkommen**, nicht als dekorative Ranke am Content-Rand. Keine unnötigen Schmuckelemente, die Inhalt oder Bedienung erschweren.
-9. **Vereinsname:** „Weltenwanderer Moosburg“ als gut sichtbarer Titel/Markenname. Vereinsstatus bzw. „e. V.“ erst verwenden, wenn bestätigt.
+4. **Designentscheidung geändert:** Die Navigation soll nicht wie in Punkt 1,2 und 3 umgesetzt werden. Wir machen eine konventionelle Navigation.
+5. **Unterseiten:** Karte oben, darunter der normale Seiteninhalt. Aktuelle Seite soll in der Navigation erkennbar sein.
+6. **Technologie:** Statische Webseite, bevorzugt **Astro** mit HTML/CSS und **minimalem JavaScript**, nur wo funktional nötig. **Kein Vue 3, React oder anderes clientseitiges UI-Framework** ohne neue ausdrückliche Entscheidung.
+7. **Designfarben:** Gedämpftes **Rot, Gold und Braun**, ergänzt durch Pergamenttöne. Atmosphäre: historisch, fantasievoll, hochwertig – aber lesbar, zurückhaltend und nicht überladen.
+8. **Kartenstil:** Handgezeichnete, historische Vogelperspektive auf Moosburg mit dichten Häuserzeilen, der markanten Kirche und warmen Pergamentfarben. **Keine modernen Bahnhofs-/Gleisanlagen**, kein Kompass und keine Straßennamen auf der finalen Karte. Wo möglich, an der tatsächlichen Altstadtstruktur orientieren.
+9. **Dekoration reduzieren:** Keine überladenen Wappen, Wimpel, Bücherstapel oder sonstige Deko im Inhaltsbereich. **Efeu kann sparsam im Karten-/Navigationsbereich vorkommen**, nicht als dekorative Ranke am Content-Rand. Keine unnötigen Schmuckelemente, die Inhalt oder Bedienung erschweren.
+10. **Vereinsname:** „Weltenwanderer Moosburg“ als gut sichtbarer Titel/Markenname. Vereinsstatus bzw. „e. V.“ erst verwenden, wenn bestätigt.
 
 ## 3. Gestaltungssystem
 
