@@ -6,6 +6,7 @@
   --paper: #e8d6ae;
   --paper-light: #f6ecd5;
   --ink: #241b17;
+  --hero-shade: rgb(36 27 23 / 92%);
   font-family: Georgia, 'Times New Roman', serif;
   color: var(--ink);
   background: var(--paper);
@@ -37,8 +38,46 @@ body { margin: 0; min-width: 320px; }
 .desktop-nav ul { display: flex; align-items: center; gap: 1.1rem; list-style: none; padding: 0; margin: 0; }
 .desktop-label { display: flex; align-items: center; min-height: 44px; white-space: nowrap; border-bottom: 2px solid transparent; }
 .desktop-label[aria-current='page'] { color: var(--paper-light); border-bottom-color: var(--gold); font-weight: bold; }
-.map-banner { max-width: 1440px; margin-inline: auto; }
-.map-banner img { display: block; width: 100%; height: clamp(240px, 28vw, 380px); object-fit: cover; object-position: center; }
+.map-hero {
+  position: relative;
+  display: grid;
+  align-items: end;
+  min-height: clamp(28rem, 75svh, 54rem);
+  isolation: isolate;
+  background: var(--brown);
+  border-bottom: 2px solid var(--gold);
+}
+.map-hero > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
+.map-hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, var(--hero-shade), transparent 75%);
+  z-index: -1;
+}
+.hero-copy {
+  width: 100%;
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: clamp(2rem, 5vw, 4.5rem) 1.5rem;
+  color: var(--paper-light);
+}
+.hero-copy .eyebrow { color: var(--paper); }
+.hero-copy h1 {
+  max-width: 19ch;
+  margin: 0;
+  font-size: clamp(2.25rem, 5vw, 4.5rem);
+  line-height: 1.12;
+  text-wrap: balance;
+}
 svg { width: 1.25em; height: 1.25em; flex-shrink: 0; }
 [aria-disabled='true'] { cursor: default; }
 .mobile-nav { display: none; }
@@ -72,7 +111,7 @@ h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.25; font-weight: norm
 }
 @media (max-width: 40rem) {
   .header-inner { padding-inline: 1rem; }
-  .map-banner img { height: 160px; }
+  .map-hero { min-height: clamp(22rem, 65svh, 40rem); }
 }
 @media (max-width: 25rem) {
   .mobile-nav ul { grid-template-columns: 1fr; }

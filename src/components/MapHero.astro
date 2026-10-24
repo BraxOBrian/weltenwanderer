@@ -1,0 +1,11 @@
+---
+import { Image } from 'astro:assets';
+import map from '../assets/desktop_nav.png';
+---
+<section class="map-hero" aria-labelledby="hero-title">
+  <Image src={map} alt="" widths={[960, 1440, 1672]} sizes="100vw" format="webp" loading="eager" fetchpriority="high" />
+  <div class="hero-copy">
+    <p class="eyebrow">Startseite</p>
+    <h1 id="hero-title">Willkommen bei den Weltenwanderern</h1>
+  </div>
+</section>
