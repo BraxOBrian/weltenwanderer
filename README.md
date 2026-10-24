@@ -1,6 +1,6 @@
 # Weltenwanderer Moosburg
 
-Statische Astro-Startseite mit Kartennavigation, Lorem-Ipsum-Platzhaltertext und Footer.
+Statische Astro-Startseite mit konventioneller Navigation und Kartenbanner, Lorem-Ipsum-Platzhaltertext und Footer.
 
 ## Entwicklung
 
@@ -17,9 +17,11 @@ Die Navigations- und Footereinträge sind absichtlich inaktiv, ohne Zieladressen
 Nur die Startseite ist angelegt. Impressum, Datenschutz und weitere Inhalte sind
 noch nicht umgesetzt. Das mobile Menü funktioniert ohne JavaScript.
 
-`src/data/navigation.ts` enthält gemeinsame Labels und prozentuale Positionen
-auf dem vollständigen Kartenbild `src/assets/desktop_nav.png`. Das Bild wird
-beim Build als WebP ausgegeben und nicht beschnitten. Unter 59rem ersetzt ein
-konventionelles Menü die Karte. Der Breakpoint ist ein vorläufiger Layoutwert.
+`src/data/navigation.ts` enthält die gemeinsamen Navigationseinträge.
+Auf Desktop steht die Navigation neben dem Vereinsnamen. Unter 76rem ersetzt
+ein natives HTML-Menü die Navigationszeile, bevor sie mit dem Namen kollidiert.
+Die Karte aus `src/assets/desktop_nav.png` bleibt darunter als reines Banner
+sichtbar, auf Mobilgeräten mit reduzierter Höhe. Sie wird beim Build als WebP
+ausgegeben und für den breiten Bannerausschnitt proportional beschnitten.
 
 `dist/`, `.astro/` und `node_modules/` sind generierte, nicht versionierte Ordner.

@@ -1,9 +1,15 @@
 ---
-import CityMapNav from './CityMapNav.astro';
+import DesktopNav from './DesktopNav.astro';
+import MapBanner from './MapBanner.astro';
 import MobileNav from './MobileNav.astro';
 ---
 <header class="site-header">
-  <div class="brand">Weltenwanderer Moosburg</div>
-  <MobileNav />
-  <CityMapNav />
+  <div class="header-bar">
+    <div class="header-inner">
+      <div class="brand">Weltenwanderer Moosburg</div>
+      <DesktopNav />
+      <MobileNav />
+    </div>
+  </div>
+  <MapBanner />
 </header>

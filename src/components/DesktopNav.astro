@@ -1,0 +1,10 @@
+---
+import { navigation } from '../data/navigation';
+---
+<nav class="desktop-nav" aria-label="Hauptnavigation">
+  <ul>
+    {navigation.map(({ label, current }) => (
+      <li><span class="desktop-label" role="link" aria-disabled="true" aria-current={current ? 'page' : undefined}>{label}</span></li>
+    ))}
+  </ul>
+</nav>
