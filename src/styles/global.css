@@ -105,8 +105,18 @@ h1 { font-size: clamp(1.8rem, 3vw, 2.5rem); line-height: 1.25; font-weight: norm
   .brand { font-size: clamp(1.2rem, 3.2vw, 1.6rem); }
   .mobile-nav { display: block; margin-left: auto; }
   .mobile-nav:has(details[open]) { flex-basis: 100%; }
-  summary { cursor: pointer; min-height: 44px; padding: .4rem 0; font-weight: bold; }
-  summary span { margin-left: .5rem; }
+  .mobile-nav summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    min-height: 44px;
+    margin-left: auto;
+    cursor: pointer;
+    list-style: none;
+  }
+  .mobile-nav summary::-webkit-details-marker { display: none; }
+  .mobile-menu-icon { width: 32px; height: 32px; }
   .mobile-nav ul { list-style: none; padding: .5rem 0; margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1rem; }
   .mobile-label { display: flex; gap: .6rem; align-items: center; min-height: 44px; }
   .mobile-label.is-current { color: var(--paper-light); font-weight: bold; text-decoration: underline; text-decoration-color: var(--gold); text-underline-offset: .3rem; }

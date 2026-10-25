@@ -4,7 +4,11 @@ import NavIcon from './NavIcon.astro';
 ---
 <nav class="mobile-nav" aria-label="Hauptnavigation">
   <details>
-    <summary>Menü <span aria-hidden="true">☰</span></summary>
+    <summary role="button" aria-label="Menü">
+      <svg class="mobile-menu-icon" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true">
+        <path d="M4 6h24M4 16h24M4 26h24" />
+      </svg>
+    </summary>
     <ul>
       {navigation.map(({ label, icon, current }) => (
         <li><span class:list={['mobile-label', { 'is-current': current }]} role="link" aria-disabled="true" aria-current={current ? 'page' : undefined}><NavIcon name={icon} />{label}</span></li>
