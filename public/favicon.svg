@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <title>W20-Würfel</title>
+  <path d="M32 2 59 17v30L32 62 5 47V17Z" fill="#762b2b" stroke="#e8d6ae" stroke-width="3" stroke-linejoin="round"/>
+  <path d="m32 11 22 35H10ZM32 2v9M5 17l27-6 27 6M5 17l5 29-5 1m54-30-5 29 5 1M10 46l22 16 22-16" fill="none" stroke="#c49a49" stroke-width="2" stroke-linejoin="round"/>
+  <text x="32" y="39" fill="#fff7e5" font-family="Georgia, serif" font-size="18" font-weight="bold" text-anchor="middle">20</text>
+</svg>
