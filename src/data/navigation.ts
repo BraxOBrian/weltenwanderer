@@ -5,5 +5,4 @@ export const navigation = [
   { label: 'Vorstand', icon: 'people', current: false },
   { label: 'Veranstaltungen', icon: 'calendar', current: false },
   { label: 'Mitglied werden', icon: 'people', current: false },
-  { label: 'Kontakt', icon: 'mail', current: false },
 ] as const;
